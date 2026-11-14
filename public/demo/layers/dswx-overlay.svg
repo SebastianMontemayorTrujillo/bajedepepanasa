@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="transparent"/>
+  <path d="M60 282 Q210 255 390 272 T740 258" fill="#2a7ab0" opacity="0.55" stroke="#4aa0d0" stroke-width="2"
+        d="M60 270 Q210 245 390 262 T740 248 L740 268 Q390 282 210 265 T60 290 Z"/>
+  <path d="M60 270 Q210 245 390 262 T740 248 L740 270 Q390 284 210 267 T60 292 Z" fill="#2a7ab0" opacity="0.5"/>
+  <ellipse cx="530" cy="325" rx="40" ry="18" fill="#2a7ab0" opacity="0.5"/>
+  <text x="24" y="480" fill="#6ab0d8" font-family="monospace" font-size="14">OPERA DSWx · water class (demo)</text>
+</svg>

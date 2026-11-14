@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="transparent"/>
+  <path d="M50 275 Q220 245 400 265 T750 250" fill="none" stroke="#e0a050" stroke-width="10" opacity="0.7"/>
+  <text x="560" y="230" fill="#e0a050" font-family="monospace" font-size="16" opacity="0.9">HH</text>
+</svg>

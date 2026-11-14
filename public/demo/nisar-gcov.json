@@ -1,0 +1,26 @@
+[
+  {
+    "id": "NISAR_L2_GCOV_MTY_20240601_DEMO",
+    "title": "NISAR GCOV Monterrey before (demo)",
+    "platform": "NISAR",
+    "dataset": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "processingLevel": "GCOV",
+    "startTime": "2024-06-01T12:00:00Z",
+    "polarizations": ["HH", "HV"],
+    "browseUrl": "/demo/layers/gcov-before.svg",
+    "requiresEarthdata": false,
+    "source": "demo"
+  },
+  {
+    "id": "NISAR_L2_GCOV_MTY_20240915_DEMO",
+    "title": "NISAR GCOV Monterrey after (demo)",
+    "platform": "NISAR",
+    "dataset": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "processingLevel": "GCOV",
+    "startTime": "2024-09-15T12:00:00Z",
+    "polarizations": ["HH", "HV"],
+    "browseUrl": "/demo/layers/gcov-after.svg",
+    "requiresEarthdata": false,
+    "source": "demo"
+  }
+]

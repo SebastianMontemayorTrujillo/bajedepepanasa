@@ -1,0 +1,14 @@
+[
+  {
+    "id": "OPERA_L2_RTC-S1_MTY_20240910_DEMO",
+    "title": "OPERA RTC-S1 Monterrey (demo fallback)",
+    "platform": "SENTINEL-1",
+    "dataset": "OPERA_L2_RTC-S1_V1",
+    "processingLevel": "RTC",
+    "startTime": "2024-09-10T18:22:00Z",
+    "polarizations": ["VV", "VH"],
+    "browseUrl": "/demo/layers/gcov-after.svg",
+    "requiresEarthdata": false,
+    "source": "demo"
+  }
+]

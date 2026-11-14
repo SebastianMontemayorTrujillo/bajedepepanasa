@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="transparent"/>
+  <ellipse cx="480" cy="300" rx="90" ry="50" fill="none" stroke="#c07090" stroke-width="3" opacity="0.65"/>
+  <ellipse cx="280" cy="330" rx="70" ry="40" fill="none" stroke="#c07090" stroke-width="3" opacity="0.55"/>
+  <text x="520" y="290" fill="#c07090" font-family="monospace" font-size="16" opacity="0.9">HV</text>
+</svg>

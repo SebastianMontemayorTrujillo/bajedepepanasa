@@ -1,0 +1,13 @@
+[
+  {
+    "id": "OPERA_L3_DSWX-HLS_MTY_20240914_DEMO",
+    "title": "OPERA DSWx-HLS Monterrey water extent (demo)",
+    "platform": "HLS",
+    "dataset": "OPERA_L3_DSWX-HLS_V1",
+    "processingLevel": "L3",
+    "startTime": "2024-09-14T17:05:00Z",
+    "browseUrl": "/demo/layers/dswx-overlay.svg",
+    "requiresEarthdata": false,
+    "source": "demo"
+  }
+]
