@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { DEFAULT_DATES, MONTERREY_AOI } from '../lib/monterrey';
+import { answerSarGuide } from '../lib/sarGuideStub';
 import { DEFAULT_MODULE_ID, getModule } from '../modules/registry';
 import type { DatePair, LayerDescriptor, Locale } from '../modules/types';
 import { t, ui } from '../i18n/locale';
@@ -72,18 +73,11 @@ export function Explorer({ locale, demoMode }: Props) {
         const data = (await res.json()) as { reply: string };
         setGuideA(data.reply);
       } else {
-        setGuideA(
-          locale === 'es'
-            ? 'Guía no disponible — revisa el servidor catalog (puerto 8787).'
-            : 'Guide unavailable — check catalog server on port 8787.',
-        );
+        setGuideA(answerSarGuide(guideQ, locale).reply);
       }
     } catch {
-      setGuideA(
-        locale === 'es'
-          ? 'Sin conexión al stub de la guía SAR.'
-          : 'Could not reach SAR guide stub.',
-      );
+      // Static Vercel deploy: no Node proxy — use client fixture answers
+      setGuideA(answerSarGuide(guideQ, locale).reply);
     } finally {
       setGuideBusy(false);
     }

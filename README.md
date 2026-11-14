@@ -29,6 +29,14 @@ npm run dev
 
 Demo mode is **on by default** — curated fixtures under `public/demo/` so the UI works with **zero Earthdata credentials**.
 
+### Vercel (static)
+
+Production is a static Vite build (`dist`). Demo mode + client SAR-guide answers work without the Node catalog proxy. For live ASF/CMR proxy locally, keep `npm run dev` (Vite + `server/catalogProxy.ts`).
+
+```bash
+npx vercel --prod
+```
+
 ### Agent SDK SAR guide
 
 ```bash

@@ -12,9 +12,20 @@ export default function App() {
     <div className="app-shell">
       <div className="atmosphere" aria-hidden />
       <header className="topbar">
-        <a className="wordmark" href="#top">
+        <a
+          className="wordmark"
+          href="#top"
+          onClick={(e) => {
+            if (showExplorer) {
+              e.preventDefault();
+              setShowExplorer(false);
+            }
+          }}
+        >
           <span className="wordmark-main">{ui.brand}</span>
-          <span className="wordmark-sub">{t(ui.brandSub, locale)}</span>
+          <span className="wordmark-sub" key={locale}>
+            {t(ui.brandSub, locale)}
+          </span>
         </a>
         <div className="topbar-actions">
           <button
@@ -27,8 +38,9 @@ export default function App() {
           </button>
           <button
             type="button"
-            className="chip"
+            className="chip lang-toggle"
             onClick={() => setLocale((l) => (l === 'es' ? 'en' : 'es'))}
+            aria-label={locale === 'es' ? 'Switch to English' : 'Cambiar a español'}
           >
             {t(ui.language, locale)}
           </button>
@@ -39,8 +51,10 @@ export default function App() {
         <main className="hero" id="top">
           <div className="hero-copy">
             <p className="brand-hero">{ui.brand}</p>
-            <h1>{t(ui.brandSub, locale)}</h1>
-            <p className="lede">{t(ui.tagline, locale)}</p>
+            <h1 key={`sub-${locale}`}>{t(ui.brandSub, locale)}</h1>
+            <p className="lede" key={`lede-${locale}`}>
+              {t(ui.tagline, locale)}
+            </p>
             <div className="cta-row">
               <button
                 type="button"
